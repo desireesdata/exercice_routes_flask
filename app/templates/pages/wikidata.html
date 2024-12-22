@@ -1,0 +1,21 @@
+
+<section id="wikidata">
+    <header>
+        <h1>Résultat de l'API pour {{id}}</h1>
+        <h2>Informations sur la requête</h2>
+        <p>Code HTTP  : {{response}}</p>   
+        <p>Type de contenu : {{r_type}}</p> 
+    </header>
+    <article>
+        {%if response == 200%}
+        <div class="good">
+            <h2>Données brutes de l'entité</h2>
+            <p>{{r_json}}</p>
+        </div>
+        {%else%}
+        <div class="bad">
+            <p>Aucune donnée valide n'a été retournée pour l'ID "{{id}}".</p>
+        </div>
+        {%endif%}
+    </article>
+</section>
