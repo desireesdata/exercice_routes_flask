@@ -2,7 +2,17 @@
 
 Récupère les données via l'API de Wikidata via la route /retrive_wikidata.
 
-> Exemple de lien avec les URI de wikidata : http://127.0.0.1:5000/retrive_wikidata/Q32
+> Exemples de lien avec les URI de wikidata :
+> 
+> http://127.0.0.1:5000/retrive_wikidata/Q32
+> 
+> http://127.0.0.1:5000/retrive_wikidata/Q42
+> 
+> http://127.0.0.1:5000/retrive_wikidata/Q1
+> 
+> etc.
+
+
 
 ![](img_for_readme/good.png)
 
@@ -34,4 +44,12 @@ Installation :
 pip install Flask && pip install python-dotenv
 ```
 
+## Aller plus loin
 
+Améliorer:
+
+- la mise en page, en particulier l'affichage du JSON
+
+- tirer profit des conteneurs/block de Jinji
+
+- meilleure gestion des erreurs + feedback utilisateur
